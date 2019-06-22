@@ -1,13 +1,13 @@
 {
   "name": "nuxt2-firebase-ssr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "setup:client": "cd \"src\" && npm i",
     "setup:server": "cd \"functions\" && npm i",
     "setup:firebase": "cp .setup-firebaserc .firebaserc",
-    "setup": "npm i && npm run setup:firebase && npm run setup:client  && npm run setup:server",
+    "setup": "npm i && npm run setup:firebase && npm run setup:client && npm run setup:server && mkdir -p ./public/assets",
     "dev": "cd ./src && npm run dev",
     "build": "cd ./src && npm run build",
     "copyassets": "cp -R ./functions/.nuxt/dist/client/* ./public/assets",
